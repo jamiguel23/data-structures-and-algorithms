@@ -38,7 +38,9 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
-  // Solution code here...
+  return (
+    arr.filter(and => and.includes('and'))
+  );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -202,7 +204,7 @@ xdescribe('Testing challenge 1', () => {
   });
 });
 
-describe('Testing challenge 2', () => {
+xdescribe('Testing challenge 2', () => {
   test('It should return an array containing only numbers', () => {
     expect(typeNum([1, 'bob', 3])).toStrictEqual([1, 3]);
     expect(typeNum([1, 'bob', 3]).length).toStrictEqual(2);
