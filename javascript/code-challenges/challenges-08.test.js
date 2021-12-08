@@ -120,7 +120,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let val = /^[A-J]/;
+  return arr.filter(cities => val.test(cities));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -196,14 +197,14 @@ Run your tests from the console: jest challenges-04.solution.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should sort the characters by number of children', () => {
     expect(sortByChildren(characters)[0].name).toStrictEqual('Euron');
     expect(sortByChildren(characters)[0].children.length).toStrictEqual(0);
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return true if the input contains a lower case w', () => {
     expect(containsW('hello world')).toBe(true);
   });
@@ -215,7 +216,7 @@ xdescribe('Testing challenge 2', () => {
   })
 })
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return true if the input is a number', () => {
     expect(isNum(1234567890)).toBeTruthy();
     expect(isNum('12345')).toBeTruthy();
@@ -229,7 +230,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true if the input contains the word school in lower case', () => {
     expect(containsWorld('hello world')).toBe(true);
   });
@@ -254,7 +255,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   let cities = ['Cleveland', 'San Diego', 'Birmingham', 'Seattle', 'Miami', 'New York City', 'Omaha', 'Portland', 'Austin', 'Boston', 'Newport Beach', 'Hoboken'];
 
   test('It should return the cities whose names begin with the letters A through J', () => {
