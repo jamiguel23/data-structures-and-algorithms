@@ -108,7 +108,9 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  // Solution code here...
+  let val = /[A-Z][a-z]+/g;
+  let result = str.match(val);
+  return result || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -227,7 +229,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-describe('Testing challenge 4', () => {
+xdescribe('Testing challenge 4', () => {
   test('It should return true if the input contains the word school in lower case', () => {
     expect(containsWorld('hello world')).toBe(true);
   });
@@ -239,7 +241,7 @@ describe('Testing challenge 4', () => {
   });
 })
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
