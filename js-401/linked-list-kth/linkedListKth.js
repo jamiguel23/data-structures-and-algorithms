@@ -146,5 +146,5 @@ console.log(list.kthFromEnd(9));
 // console.log(list.includes(96));
 // console.log(list.to_sting(list));
 
-// module.exports = Node;
-// module.exports = LinkedList;
+module.exports = Node;
+module.exports = LinkedList;
