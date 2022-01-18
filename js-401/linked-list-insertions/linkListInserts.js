@@ -85,11 +85,12 @@ class LinkedList {
   insertAfter(value, newVal) {
     let newNode = new Node(newVal);
     let currentNode = this.head;
-
+    let nextVal;
     while (currentNode !== null) {
       if (currentNode.value === value ){
-        newNode.next = currentNode;
+        nextVal = currentNode.next;
         currentNode.next = newNode;
+        newNode.next = nextVal;
         return;
       }
       currentNode = currentNode.next;
@@ -108,9 +109,11 @@ list.append(93);
 
 // list.insert('miguel');
 
-list.insertBefore(23, 10);
-// list.insertAfter('matt', 'miguel');
+// list.insertBefore(23, 10);
+list.insertAfter('matt', 'miguel');
 
+
+// console.log(list);
 
 console.log(JSON.stringify(list));
 // console.log(list.includes(96));
