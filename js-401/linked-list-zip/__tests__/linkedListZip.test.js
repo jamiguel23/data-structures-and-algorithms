@@ -18,14 +18,14 @@ describe('Zip list', () => {
     otherList.append('reyes');
     otherList.append('24');
 
-    console.log('this is the list' , list);
-    console.log('this is the other list' , otherList);
+    console.log('this is the list' , JSON.stringify(list));
+    console.log('this is the other list' , JSON.stringify(otherList));
 
     let result = newList.zip(list,otherList);
 
-    console.log(result);
+    console.log(result.head.value);
 
-    // expect(result.next.value).toEqual('matt');
+    expect(result.head.value).toEqual('matt');
 
   });
 
