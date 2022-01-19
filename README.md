@@ -25,4 +25,5 @@ To run your tests
 - [Coding Challenge 3 array-reverse](js-401/array-binary-search/README.md)
 - [Code Challenge 5 linked-list](js-401/linked-list/README.md)
 - [Coding Challenge 6 linked-list-insertions](js-401/linked-list-insertions/README.md)
--[Coding Challenge 7 linked-list-kth](js-401/linked-list-kth/README.md)
+- [Coding Challenge 7 linked-list-kth](js-401/linked-list-kth/README.md)
+- [Coding Challenge 8 linked-list-zip](js-401/linked-list-zip/README.md)
