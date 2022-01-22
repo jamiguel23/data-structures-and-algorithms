@@ -1,7 +1,7 @@
 'use strict';
 
 const Node = require('./Node.js');
-const LinkedList = require('./LinkedList.js');
+// const LinkedList = require('./LinkedList.js');
 
 class Stack {
   constructor(){
@@ -132,3 +132,6 @@ console.log(queue.isEmpty());
 // console.log(stack.isEmpty());
 // console.log('new stack' , newStack);
 // console.log(newStack.isEmpty());
+
+module.exports = Queue;
+module.exports = Stack;
