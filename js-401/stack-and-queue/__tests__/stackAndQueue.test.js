@@ -38,12 +38,20 @@ describe('testing stack', () =>{
 
     stack.push(val);
     expect(stack.top.value).toEqual(50);
+    expect(stack.top.next.value).toEqual('foo');
   });
 
   it('should remove top value from stack', () => {
 
-    stack.pop();
-    // expect()
+    let popped = stack.pop();
+    console.log(popped);
+    expect(popped).toEqual(50);
+    expect(stack.top.value).toEqual('foo');
+  });
+
+  it('should add a new value and return new value as top', () => {
+    let name = 'dave';
+    stack.
   });
 });
 
