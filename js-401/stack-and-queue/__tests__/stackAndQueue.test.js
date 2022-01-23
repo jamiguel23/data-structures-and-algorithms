@@ -1,12 +1,12 @@
 'use strict';
 
-const Queue = require('../stackAndQueue.js');
+const Queue = require('../queue.js');
 const Stack = require('../stackAndQueue.js');
-const Node = require('../Node.js');
 const LinkedList = require('../LinkedList.js');
 
 let list = new LinkedList();
 let stack = new Stack();
+let queue = new Queue();
 let val = 50;
 let newVal = 'foo';
 
@@ -67,3 +67,41 @@ describe('testing stack', () =>{
   });
 });
 
+describe('testing queue', () => {
+
+  it('should add values to queue', () => {
+    queue.enqueue(val);
+    queue.enqueue(newVal);
+    expect(queue.front.value).toEqual(50);
+    expect(queue.front.next.value).toEqual('foo');
+    expect(queue.back.next).toEqual(null);
+  });
+
+  it('should remove the first node added for queue', () => {
+    queue.enqueue(86);
+    console.log(JSON.stringify(queue));
+    let result = queue.dequeue();
+    expect(result).toEqual(50);
+    expect(queue.front.value).toEqual('foo');
+    expect(queue.back.value).toEqual(86);
+    expect(queue.back.next).toEqual(null);
+    expect(queue.front.next.value).toEqual(86);
+  });
+
+  it('should return value of front', () => {
+    let result = queue.peek();
+    expect(result).toEqual('foo');
+  });
+
+  it('should return true if no values in queue', () => {
+    let newQueue = new Queue();
+    let result = newQueue.isEmpty();
+    expect(result).toEqual(true);
+    expect(newQueue.front).toEqual(null);
+  });
+
+  it('should return false if queue has value', () => {
+    let result = queue.isEmpty();
+    expect(result).toBe(false);
+  });
+});
