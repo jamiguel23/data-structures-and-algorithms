@@ -51,7 +51,19 @@ describe('testing stack', () =>{
 
   it('should add a new value and return new value as top', () => {
     let name = 'dave';
-    stack.
+    stack.push(name);
+    expect(stack.top.value).toEqual('dave');
+  });
+
+  it('should return false if there are values in stack', () => {
+    let result = stack.isEmpty();
+    expect(result).toBe(false);
+  });
+
+  it('should return true is there are no values in stack', () => {
+    let otherStack = new Stack();
+    let result = otherStack.isEmpty();
+    expect(result).toBe(true);
   });
 });
 
