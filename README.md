@@ -27,4 +27,5 @@ To run your tests
 - [Coding Challenge 6 linked-list-insertions](js-401/linked-list-insertions/README.md)
 - [Coding Challenge 7 linked-list-kth](js-401/linked-list-kth/README.md)
 - [Coding Challenge 8 linked-list-zip](js-401/linked-list-zip/README.md)
-- [Coding Challenge 8 linked-list-zip](js-401/stack-and-queue/README.md)
+- [Coding Challenge 9 stack-and-queue](js-401/stack-and-queue/README.md)
+- [Coding Challenge 11 stack-queue-pseudo](js-401/stack-queue-pseudo/README.md)
