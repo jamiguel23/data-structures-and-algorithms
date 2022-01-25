@@ -16,30 +16,15 @@ class PseudoQueue {
     let newStack = this.stack1;
     newStack.push(value);
 
-    // let node = new Node(value);
-
-    // if (this.front === null) {
-    //   this.front = node;
-    //   this.back = node;
-    //   return;
-    // } else {
-    //   this.back.next = node;
-    //   this.back = node;
-    //   return;
-    // }
 
   }
 
   dequeue() {
-
-    let nodeToRemove = this.front;
-    // console.log(nodeToRemove);
-    this.front = nodeToRemove.next;
-    nodeToRemove.next = null;
-    if (!this.front) {
-      this.back = null;
+    while (this.stack1.top !== null) {
+      let top = this.stack1.pop();
+      this.stack2.push(top);
     }
-    return nodeToRemove.value;
+    return this.stack2.pop();
   }
 
 }
@@ -49,9 +34,14 @@ queue.enqueue(20);
 queue.enqueue(15);
 queue.enqueue(10);
 queue.enqueue(5);
-// let result = queue.dequeue();
+let result = queue.dequeue();
 
-console.log(queue);
+// console.log(queue.stack1.top);
+
+// console.log(JSON.stringify(queue));
+
+console.log(result);
+
 
 // let stack = new Stack();
 // let val = 50;
