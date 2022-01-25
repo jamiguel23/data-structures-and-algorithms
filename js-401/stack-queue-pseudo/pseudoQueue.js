@@ -1,6 +1,5 @@
 'use strict';
 
-let Node = require('./Node.js');
 let Stack = require('./Stack.js');
 
 class PseudoQueue {
