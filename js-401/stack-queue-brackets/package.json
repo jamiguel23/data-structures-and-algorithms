@@ -1,0 +1,15 @@
+{
+  "name": "stack-queue-brackets",
+  "version": "1.0.0",
+  "description": "## Problem Domain:",
+  "main": "linkedListZip.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}
