@@ -63,11 +63,11 @@ tree.root.left.right = node5;
 tree.root.right.left = node6;
 
 
-tree.preOrder();
-console.log('************');
-tree.inOrder();
-console.log('************');
-tree.postOrder();
+// tree.preOrder();
+// console.log('************');
+// tree.inOrder();
+// console.log('************');
+// tree.postOrder();
 
 
 module.exports = BT;

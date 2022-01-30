@@ -27,5 +27,9 @@ Features
       Returns: boolean indicating whether or not the value is in the tree at least once.
 
 ## Approach
+following the demo code, I was able to refactor so that the preorder, inorder, and postorder are methods inside the BT class. After struggling a little with the BST, Iw as able to fins some youtube videos that would help me get the result that I wanted.
 
-  
+https://www.youtube.com/watch?v=5cU1ILGy6dM&t=29s
+
+
+I am finding that I am enjoying learning about DSA
