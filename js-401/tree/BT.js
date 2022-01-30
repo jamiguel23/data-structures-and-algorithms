@@ -8,6 +8,42 @@ class BT {
   constructor() {
     this.root = null;
   }
+
+  // root -> left -> right
+  preOrder() {
+
+    let helper = (node) => {
+      console.log(node.value);
+      if (node.left) helper(node.left);
+      if (node.right) helper(node.right);
+    };
+    helper(this.root);
+
+  }
+
+  // left -> root -> right
+  inOrder() {
+
+    let helper = (node) => {
+      if (node.left) helper(node.left);
+      console.log(node.value);
+      if (node.right) helper(node.right);
+    };
+    helper(this.root);
+
+  }
+
+  // left -> right -> root
+  postOrder() {
+
+    let helper = (node) => {
+      if (node.left) helper(node.left);
+      if (node.right) helper(node.right);
+      console.log(node.value);
+    };
+    helper(this.root);
+  }
+
 }
 
 const tree = new BT();
@@ -26,62 +62,12 @@ tree.root.left.left = node4;
 tree.root.left.right = node5;
 tree.root.right.left = node6;
 
-console.log(JSON.stringify(tree));
 
+tree.preOrder();
+console.log('************');
+tree.inOrder();
+console.log('************');
+tree.postOrder();
 
-// root -> left -> right
-function preOrder(node) {
-
-  console.log(node.value);
-
-  if (node.left) {
-    preOrder(node.left);
-  }
-
-  if (node.right) {
-    preOrder(node.right);
-  }
-
-}
-
-// left -> root -> right
-function inOrder(node) {
-
-
-  if (node.left) {
-    inOrder(node.left);
-  }
-
-  console.log(node.value);
-
-  if (node.right) {
-    inOrder(node.right);
-  }
-
-}
-
-// left -> right -> root
-function postOrder(node) {
-
-
-  if (node.left) {
-    postOrder(node.left);
-  }
-
-
-  if (node.right) {
-    postOrder(node.right);
-  }
-
-  console.log(node.value);
-}
-
-
-
-preOrder(tree.root);
-console.log('~~~~~~~~~~~~');
-inOrder(tree.root);
-console.log('~~~~~~~~~~~~');
-postOrder(tree.root);
 
 module.exports = BT;
