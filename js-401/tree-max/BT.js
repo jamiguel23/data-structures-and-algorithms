@@ -47,17 +47,17 @@ class BT {
   findMax() {
 
     let maxValue = 0;
-    let res = [];
-    let helper = (node) => {
-      if (node.left) helper(node.left);
+    // let res = [];
+    let walk = (node) => {
+      if (node.left) walk(node.left);
       if (node.value > maxValue) {
         maxValue = node.value;
-        res.push(maxValue);
+        // res.push(maxValue);
       }
-      if (node.right) helper(node.right);
+      if (node.right) walk(node.right);
     };
-    helper(this.root);
-    console.log(res);
+    walk(this.root);
+    // console.log(res);
     return maxValue;
 
   }
