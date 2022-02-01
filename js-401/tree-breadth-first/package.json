@@ -1,0 +1,15 @@
+{
+  "name": "tree-breadth-first",
+  "version": "1.0.0",
+  "description": "## Feature Feature Tasks Write a function called breadth first Arguments: tree Return: list of all values in the tree, in the order they were encountered",
+  "main": "BT.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}
