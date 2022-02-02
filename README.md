@@ -32,5 +32,6 @@ To run your tests
 - [Coding Challenge 12 stack-queue-animal-shelter](js-401/stack-queue-animal-shelter/README.md)
 - [Coding Challenge 13 stack-queue-brackets](js-401/stack-queue-brackets/README.md)
 - [Coding Challenge 14 tree](js-401/tree/README.md)
-- [Coding Challenge 16 tree](js-401/tree-max/README.md)
-- [Coding Challenge 17 tree](js-401/tree-max/README.md)
+- [Coding Challenge 16 tree-max](js-401/tree-max/README.md)
+- [Coding Challenge 17 tree-breadth-first](js-401/tree-breadth-first/README.md)
+- [Coding Challenge 18 tree-fizz-buzz](js-401/tree-fizz-buzz/README.md)
