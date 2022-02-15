@@ -30,12 +30,9 @@ function merge(left, right, arr) {
   let i = 0;
   let j = 0;
   let k = 0;
-  console.log('left', left, 'right', right, 'arr', arr);
-  // Moves through the left and right arrays to find the lowest
+  // console.log('left', left, 'right', right, 'arr', arr);
+  // Moves left and right arrays to find the lowest
   while ((i < left.length) && (j < right.length)) {
-    // beginning of each array
-    // the values will be the lowest, finds the lowest
-    // and adds it to the array
     if (left[i] <= right[j]) {
       arr[k] = left[i]
       i = i + 1
@@ -57,6 +54,9 @@ function merge(left, right, arr) {
 
 
 
-let sampleArr = [8,4,23,42,16,15];
+// let sampleArr = [8,4,23,42,16,15];
 
-console.log(mergeSort(sampleArr));
+// console.log(mergeSort(sampleArr));
+
+
+module.exports = mergeSort;
