@@ -36,3 +36,4 @@ To run your tests
 - [Coding Challenge 17 tree-breadth-first](js-401/tree-breadth-first/README.md)
 - [Coding Challenge 18 tree-fizz-buzz](js-401/tree-fizz-buzz/README.md)
 - [Coding Challenge 26 insertion sort](js-401/insertionSort/BLOG.md)
+- [Coding Challenge 27 insertion sort](js-401/merge-sort/BLOG.md)
