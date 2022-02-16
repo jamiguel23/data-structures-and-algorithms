@@ -37,3 +37,4 @@ To run your tests
 - [Coding Challenge 18 tree-fizz-buzz](js-401/tree-fizz-buzz/README.md)
 - [Coding Challenge 26 insertion sort](js-401/insertionSort/BLOG.md)
 - [Coding Challenge 27 insertion sort](js-401/merge-sort/BLOG.md)
+- [Coding Challenge 28 insertion sort](js-401/quick-sort/BLOG.md)
