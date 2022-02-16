@@ -33,6 +33,14 @@
       arr[low] <-- temp
 
 
+## Process
+
+Quick sort is comprised of 3 helper functions: _quickSort() where the recursive behavior starts by defining a position or a pivot point. The position is defined by the second function called partition() where we compare values in the array with the pivot point and if they needed to be swapped based if the value is lower or higher than the pivot. The third function is swap() where if the partition function finds values to swap, that function will be called.
+
+In my quickSort.js file there is the addition of called quickSort that takes in an array and inside there will be the initial values that are needed to start the main _quickSort function.
+
+
+
 ## Resources 
 
 [Quick Sort in 4 minutes](https://www.youtube.com/watch?v=Hoixgm4-P4M)
