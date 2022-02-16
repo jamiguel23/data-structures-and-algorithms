@@ -31,3 +31,9 @@
       temp <-- arr[i]
       arr[i] <-- arr[low]
       arr[low] <-- temp
+
+
+## Resources 
+
+[Quick Sort in 4 minutes](https://www.youtube.com/watch?v=Hoixgm4-P4M)
+[Geeks for Geeks - Quick Sort](https://www.geeksforgeeks.org/quick-sort/)
