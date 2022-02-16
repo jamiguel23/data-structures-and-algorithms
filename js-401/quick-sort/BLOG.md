@@ -41,6 +41,7 @@ In my quickSort.js file there is the addition of called quickSort that takes in 
 
 
 
+![uml](cc28.PNG)
 ## Resources 
 
 [Quick Sort in 4 minutes](https://www.youtube.com/watch?v=Hoixgm4-P4M)
