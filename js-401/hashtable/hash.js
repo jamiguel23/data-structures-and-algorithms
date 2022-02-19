@@ -67,12 +67,11 @@ class HashTable {
 
     for ( let i = 0; i < this.buckets.length; i++ ){
 
-      if (!this.buckets[i] === []){
-        console.log(this.buckets[i])
-        
+      if (this.buckets[i]){
+        let [key, value] = this.buckets[i].head.value.split(':')
+        collection.push(key);
       }
-      // collection.push(this.buckets[i].head.node.value)
-      // console.log(this.buckets[i]);
+      
     }
 
 
@@ -99,3 +98,5 @@ table.set('matt', 50);
 let keys = table.keys();
 
 console.log(keys);
+
+module.exports = HashTable;
