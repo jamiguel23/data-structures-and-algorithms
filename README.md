@@ -38,3 +38,4 @@ To run your tests
 - [Coding Challenge 26 insertion sort](js-401/insertionSort/BLOG.md)
 - [Coding Challenge 27 insertion sort](js-401/merge-sort/BLOG.md)
 - [Coding Challenge 28 insertion sort](js-401/quick-sort/BLOG.md)
+- [Coding Challenge 30 insertion sort](js-401/quick-sort/BLOG.md)
