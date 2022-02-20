@@ -22,7 +22,5 @@ Arguments: key
 Returns: Index in the collection for that key
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+After following the recoding I was able to recreate it in this file. This, I think is my favorite DSA so far because of the possibilities  of how much faster this is to retrevie the data than a linked list or a tree. Most of the big O complexity will fall in O(1).
 
-## API
-<!-- Description of each method publicly available in each of your hashtable -->

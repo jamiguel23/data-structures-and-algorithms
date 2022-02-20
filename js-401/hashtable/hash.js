@@ -95,8 +95,8 @@ table.set('matt', 50);
 
 // console.log(contain);
 
-let keys = table.keys();
+// let keys = table.keys();
 
-console.log(keys);
+// console.log(keys);
 
 module.exports = HashTable;
