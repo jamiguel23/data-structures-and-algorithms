@@ -19,4 +19,9 @@ Having the sample output helped a ton with this coding challenge. Noticed that t
 
 Michael Metcalf
 
+## Big O
 
+time - O(n)
+space- O(1)?
+
+![uml](assets/cc33.PNG)
