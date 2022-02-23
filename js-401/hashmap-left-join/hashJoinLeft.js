@@ -17,7 +17,7 @@ let leftJoin = (HT1, HT2) => {
       if (HT2.contains(key)) {
         let [key2, value2] = HT2.buckets[i].head.value.split(':')
 
-        console.log(key2, value2)
+        // console.log(key2, value2)
 
         subArray.push(value2);
       } else {
@@ -46,6 +46,6 @@ ht2.set('wrath', 'delight');
 
 let test = leftJoin(ht1, ht2);
 
-console.log(test);
+// console.log(test);
 
 module.exports = leftJoin;
