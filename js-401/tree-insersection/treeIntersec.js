@@ -22,7 +22,6 @@ class HashTable {
 
   hash(key) {
 
-    console.log('lkajlfajlf', key)
     let chars = key.split('');
     let sum = chars.reduce((state, char) => {
       return state + char.charCodeAt(0);
@@ -140,38 +139,66 @@ tree2.root.right.left = n6;
 
 
 
-// console.log(tree1, tree2)
+function hashRepeatWord(str) {
+
+  // let lowercaseStr = str.toLowerCase();
+  // let strArr = str.split(' ');
+  // console.log(strArr);
+
+  let repeats = []
+
+  let table = new HashTable(str.length);
+  // console.log(table)
+
+  for (let i = 0; i < str.length; i++) {
+
+    if (table.contains(str[i])) {
+      // console.log(str[i])
+      // return str[i];
+      repeats.push(str[i]);
+    }
+
+    table.set(str[i]);
+    // console.log(str[i])
+
+    
+  }
+  // console.log(JSON.stringify(table));
+  
+  return repeats;
+  
+
+  // return 'no repeats found'
+}
+
 
 function treeIntersection(t1, t2) {
 
 
   let tree1Res = t1.preOrder()
   let tree2Res = t2.preOrder()
-  console.log(tree1Res)
-  console.log(tree2Res)
+ 
 
   let tree1Str = tree1Res.toString()
   let tree1Split = tree1Str.split(',')
-  console.log(tree1Split);
+  // console.log(tree1Split);
 
-  for(let i = 0; i < tree1Split.length; i++){
-   
 
-    table.set(tree1Split[i])
+  let tree2Str = tree2Res.toString()
+  let tree2Split = tree2Str.split(',')
+  // console.log(tree2Split);
 
-  }
-  console.log(table);
+  // let combinedStr = tree1Split.concat(tree2Split).toString()
+  let combined = tree1Split.concat(tree2Split)
 
-  // tree1Str.forEach(table.set())
 
-  
-  
+  console.log(combined)
 
 
 
+  console.log(hashRepeatWord(combined));
 
 }
 
 treeIntersection(tree1, tree2)
 
-tree1.preOrder();
