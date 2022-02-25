@@ -40,5 +40,6 @@ To run your tests
 - [Coding Challenge 28 quick sort](js-401/quick-sort/BLOG.md)
 - [Coding Challenge 30 hastable](js-401/hashtable/README.md)
 - [Coding Challenge 31 hashmap repeated word](js-401/hashmap-repeated-word/README.md)
-- [Coding Challenge 32 hashmap repeated word](js-401/tree-insersection/README.md)
-- [Coding Challenge 33 hashmap repeated word](js-401/hashmap-left-join/README.md)
+- [Coding Challenge 32 tree-insersection](js-401/tree-insersection/README.md)
+- [Coding Challenge 33 hashmap-left-join](js-401/hashmap-left-join/README.md)
+- [Coding Challenge 35 hashmap-left-join](js-401/graph/README.md)
