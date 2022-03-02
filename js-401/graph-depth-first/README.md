@@ -12,3 +12,4 @@ Program output: Display the collection
 
 
 ## Approach & Efficiency
+I want to use the same approach to a depth first on a tree
