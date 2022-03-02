@@ -78,29 +78,31 @@ class Graph {
   }
 
   dfs(startNode) {
-    let startingVertex = this.getNeighbors(startNode)
-    let stack = startingVertex
-    let visitedNodes = new Set();
-    let results = [];
-    visitedNodes.add(startNode);
-    let popped = stack.shift()
-    console.log('popped:', popped);
-    console.log('popped:', this.getNeighbors(popped.vertex));
-    if(stack[0].vertex) console.log('stack[0].vertex',stack[0].vertex)
-    
-    while (stack) {
-      // console.log('stack.vertex:', stack[0].vertex);
-      // stack = stack.vertex
-    }
+    const stack = [];
+    const visitedVertices = new Set();
 
-    /*
-      Push the root node into the stack
-      Start a while loop while the stack is not empty
-      Peek at the top node in the stack
-      If the top node has unvisited children, mark the top node as visited, and then Push any unvisited children back into the stack.
-      If the top node does not have any unvisited children, Pop that node off the stack
-      repeat until the stack is empty.
-    */
+    stack.push(startNode);
+    visitedVertices.add(startNode);
+
+    while (stack.length) {
+      const currentNode = stack.shift();
+
+      const neighbors = this.getNeighbors(currentNode);
+
+      for (let neighbor of neighbors) {
+        const neighborNode = neighbor.vertex;
+
+        if (visitedVertices.has(neighborNode)) {
+          continue;
+        } else {
+          visitedVertices.add(neighborNode)
+        }
+        stack.push(neighborNode);
+      }
+
+    }
+    console.log('visitedNodes', visitedNodes);
+    return;
   }
 
 
