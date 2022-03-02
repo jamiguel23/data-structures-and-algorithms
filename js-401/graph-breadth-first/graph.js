@@ -15,8 +15,6 @@ class Edge {
 
 class Graph {
   constructor() {
-    // why use a Map?
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
     this.adjacencyList = new Map();
   }
 
@@ -26,7 +24,7 @@ class Graph {
     return vertex;
   }
 
-  // adds a directional edge
+ 
   addEdge(startVertex, endVertex, weight = 0) {
     if (!this.adjacencyList.has(startVertex) || !this.adjacencyList.has(endVertex)) {
       throw new Error('__ERROR__ Invalid Vertices');
@@ -36,8 +34,6 @@ class Graph {
   }
 
   getVertices() {
-    // - Arguments: none
-    // - Returns all of the nodes in the graph as a collection (set, list, or similar)
     return this.adjacencyList;
   }
 
@@ -49,8 +45,6 @@ class Graph {
   }
 
   size() {
-    // - Arguments: none
-    // - Returns the total number of nodes in the graph
     return this.adjacencyList.size;
   }
 
@@ -85,7 +79,6 @@ class Graph {
 
 
 }
-
 const graph = new Graph();
 
 // adding 'nodes/vertex'
