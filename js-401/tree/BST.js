@@ -16,6 +16,7 @@ class BST extends BT {
       return this;
     }
 
+    
     let current = this.root;
     while(current){
       if(value === current.value) return undefined;

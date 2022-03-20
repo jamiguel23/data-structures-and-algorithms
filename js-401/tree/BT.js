@@ -63,7 +63,7 @@ tree.root.left.right = node5;
 tree.root.right.left = node6;
 
 
-// tree.preOrder();
+tree.preOrder();
 // console.log('************');
 // tree.inOrder();
 // console.log('************');
