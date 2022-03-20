@@ -74,11 +74,11 @@ class Stack {
 // let stack = new Stack();
 // let newStack = new Stack();
 
-// stack.push('matt');
-// stack.push('miguel');
-// stack.push('10');
-// stack.push('foo');
-// let val = stack.pop();
+stack.push('matt');
+stack.push('miguel');
+stack.push('10');
+stack.push('foo');
+let val = stack.pop();
 
 // console.log(JSON.stringify(stack), val);
 // console.log(stack.peek());
