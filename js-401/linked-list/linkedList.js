@@ -68,7 +68,7 @@ class LinkedList {
 }
 
 // list.head = node;
-let list = new LinkedList();
+// let list = new LinkedList();
 
 
 // list.append('matt');
