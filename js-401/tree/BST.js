@@ -1,5 +1,5 @@
 'use strict';
-
+let treeify = require('treeify');
 const Node = require('./Node.js');
 const BT = require('./BT.js');
 
@@ -58,15 +58,15 @@ class BST extends BT {
   nearestValue(num){
 
     let current = this.root;
-    let result = Infinity;
+    let result = {stories: Infinity};
 
     while(current !== null){
 
-      console.log(current)
-      if (Math.abs(current.value.stories - num) < Math.abs(result - num )) {
-        // console.log(current.value.stories)
-        result = current.value.hours;
-        // console.log(result);
+      // console.log(current.value)
+      if (Math.abs(current.value.stories - num) < (Math.abs(result.stories - num ))) {
+        // console.log(current.value)
+        result = current.value;
+        console.log(result);
 
       }
 
@@ -78,7 +78,7 @@ class BST extends BT {
 
     }
 
-    return result
+    return result.hours
   }
 
 
@@ -120,7 +120,7 @@ console.log(nearestResult);
 // let result = tree.contain(55)
 // let otherResult = tree.contain(99);
 
-// console.log(JSON.stringify(tree));
+console.log(treeify.asTree(tree, true));
 // console.log('@@@@@@@@@@@@@@@');
 // console.log(result);
 // console.log('@@@@@@@@@@@@@@@');
