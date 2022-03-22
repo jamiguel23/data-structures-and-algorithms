@@ -19,8 +19,8 @@ class BST extends BT {
 
     let current = this.root;
     while(current){
-      if(value === current.value) return undefined;
-      if(value < current.value){
+      if(value.stories === current.value.stories) return undefined;
+      if(value.stories < current.value.stories){
         if(current.left === null){
           current.left = node;
           return this;
@@ -58,20 +58,19 @@ class BST extends BT {
   nearestValue(num){
 
     let current = this.root;
-
-
     let result = Infinity;
 
     while(current !== null){
-      // console.log(current)
 
-      if (Math.abs(current.value - num) < Math.abs(result - num )) {
-        result = current.value;
+      console.log(current)
+      if (Math.abs(current.value.stories - num) < Math.abs(result - num )) {
+        // console.log(current.value.stories)
+        result = current.value.hours;
         // console.log(result);
 
       }
 
-      if (num > current.value){
+      if (num > current.value.stories){
         current = current.right;
       } else {
         current = current.left;
@@ -112,16 +111,16 @@ tree.add({
   hours : 11,
 });
 
-let nearestResult = tree.nearestValue(53);
+let nearestResult = tree.nearestValue(1);
+console.log(nearestResult);
 
 // console.log(tree.root.value.hours)
 
-// console.log(nearestResult);
 
 // let result = tree.contain(55)
 // let otherResult = tree.contain(99);
 
-console.log(JSON.stringify(tree));
+// console.log(JSON.stringify(tree));
 // console.log('@@@@@@@@@@@@@@@');
 // console.log(result);
 // console.log('@@@@@@@@@@@@@@@');
