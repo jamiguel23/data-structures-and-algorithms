@@ -16,7 +16,7 @@ class BST extends BT {
       return this;
     }
 
-    
+
     let current = this.root;
     while(current){
       if(value === current.value) return undefined;
@@ -56,18 +56,19 @@ class BST extends BT {
   }
 }
 
-// let tree = new BST();
+let tree = new BST();
 
-// tree.add(50);
-// tree.add(55);
-// tree.add(40);
-// tree.add(43);
-// tree.add(41);
+tree.add(50);
+tree.add(52)
+tree.add(55);
+tree.add(41);
+tree.add(40);
+tree.add(43);
 
-// let result = tree.contain(55);
+let result = tree.contain(55);
 // let otherResult = tree.contain(99);
 
-// console.log(JSON.stringify(tree));
+console.log(JSON.stringify(tree));
 // console.log('@@@@@@@@@@@@@@@');
 // console.log(result);
 // console.log('@@@@@@@@@@@@@@@');
