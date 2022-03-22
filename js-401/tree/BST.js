@@ -54,6 +54,30 @@ class BST extends BT {
     }
     return false;
   }
+
+  nearestValue(target){
+
+    let current = this.root;
+    let result = Infinity;
+
+
+    while (current !== null){
+
+      if (Math.abs(current.value - target) < (Math.abs(result - target))) {
+        result = current.value;
+      }
+
+      if (target > current.value) {
+
+        current = current.right
+      } else {
+        current = current.left
+      }
+
+    }
+
+    return result
+  }
 }
 
 let tree = new BST();
@@ -65,10 +89,13 @@ tree.add(41);
 tree.add(40);
 tree.add(43);
 
-let result = tree.contain(55);
-// let otherResult = tree.contain(99);
 
-console.log(JSON.stringify(tree));
+let nearestResult = tree.nearestValue(1)
+
+console.log(nearestResult);
+
+
+// console.log(JSON.stringify(tree));
 // console.log('@@@@@@@@@@@@@@@');
 // console.log(result);
 // console.log('@@@@@@@@@@@@@@@');
