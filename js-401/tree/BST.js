@@ -54,18 +54,71 @@ class BST extends BT {
     }
     return false;
   }
+
+  nearestValue(num){
+
+    let current = this.root;
+
+
+    let result = Infinity;
+
+    while(current !== null){
+      // console.log(current)
+
+      if (Math.abs(current.value - num) < Math.abs(result - num )) {
+        result = current.value;
+        // console.log(result);
+
+      }
+
+      if (num > current.value){
+        current = current.right;
+      } else {
+        current = current.left;
+      }
+
+    }
+
+    return result
+  }
+
+
 }
 
 let tree = new BST();
 
-tree.add(50);
-tree.add(52)
-tree.add(55);
-tree.add(41);
-tree.add(40);
-tree.add(43);
+tree.add({
+  stories: 342,
+  hours : 50,
+});
 
-let result = tree.contain(55);
+tree.add({
+  stories: 430,
+  hours : 62,
+});
+
+tree.add({
+  stories: 400,
+  hours : 56,
+});
+
+tree.add({
+  stories: 324,
+  hours : 46,
+});
+
+tree.add({
+  stories: 99,
+  hours : 11,
+});
+
+let nearestResult = tree.nearestValue(53);
+
+// console.log(tree.root.value.hours)
+
+// console.log(nearestResult);
+
+// let result = tree.contain(55)
 // let otherResult = tree.contain(99);
 
 console.log(JSON.stringify(tree));
