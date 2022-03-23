@@ -11,3 +11,9 @@ Using a for of loop to iterate through the object. Use nested loop to add to an 
 ## Stretch Goals
 
 The given object will have the decrementing values, meaning values like 4/'IV' and 9/'IX' will included. Remove these key value pairs to give harder challenge.
+
+
+## Big O
+
+- Time: O(n) for the worst case
+- Space O(1), no added space needed
