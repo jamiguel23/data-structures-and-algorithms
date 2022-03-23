@@ -46,7 +46,7 @@ class LinkedList {
 
     // while loop when lists are no null
     while (listA !== null || listB !== null) {
-      //conditional 
+      //conditional
       if (listA.next === null || listB.next === null) {
         // listA.next = listB;
         // newList.append(listB.value);
@@ -74,23 +74,58 @@ class LinkedList {
   }
 
 
+
 }
 
 
+const zipInPlace = (head1, head2) => {
 
-// let list = new LinkedList();
-// let otherList = new LinkedList();
+  let tail = head1.head
+  // return tail
+  let current1 = head1.head.next;
+  // console.log(current1)
+  let current2 = head2.head
+  let count = 0;
 
-// list.append('matt');
-// list.append('miguel');
-// list.append('23');
+  while ( current1 !== null && current2 !== null){
 
-// otherList.append('judith');
-// otherList.append('reyes');
-// otherList.append('24');
+    if (count % 2 === 0){
+      tail.next = current2
+      current2 = current2.next
+    } else {
 
-// LinkedList.zip(list, newList);
-// console.log(this.zip(list, otherList));
+      tail.next = current1
+      current1 = current1.next
+    }
+
+    tail = tail.next
+    count += 1
+
+  }
+
+  if (current1 !== null) tail.next = current1;
+  if (current2 !== null) tail.next = current2;
+
+
+  return head1
+}
+
+let list = new LinkedList();
+let otherList = new LinkedList();
+
+list.append('matt');
+list.append('miguel');
+list.append('23');
+
+otherList.append('judith');
+otherList.append('reyes');
+otherList.append('24');
+
+// console.log(list)
+// console.log(otherList)
+
+console.log(JSON.stringify(zipInPlace(list, otherList)));
+
 // LinkedList.zip(list,otherList);
 
 // console.log(JSON.stringify(list));
@@ -98,6 +133,8 @@ class LinkedList {
 // console.log(list.zip(list,otherList));
 
 
-module.exports = Node;
-module.exports = LinkedList;
+module.exports = {
+  Node,
+  LinkedList,
+};
 
