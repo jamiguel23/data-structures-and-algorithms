@@ -80,30 +80,30 @@ class LinkedList {
 
 const zipInPlace = (head1, head2) => {
 
-  let tail = head1.head
+  let tail = head1.head // tail pointer
   // return tail
-  let current1 = head1.head.next;
+  let current1 = head1.head.next; // LL 1 pointer starting at second node
   // console.log(current1)
-  let current2 = head2.head
-  let count = 0;
+  let current2 = head2.head // LL 2 pointer
+  let count = 0; // count will be used to alternate which LL to look at
 
   while ( current1 !== null && current2 !== null){
 
-    if (count % 2 === 0){
-      tail.next = current2
-      current2 = current2.next
-    } else {
+    if (count % 2 === 0){ // if the counter is even then LL 2 will be looked at
+      tail.next = current2 // make tail.next current 2 || LL2 pointer
+      current2 = current2.next // move current2 to next node
+    } else { // when count is odd LL 1 will be looked at
 
       tail.next = current1
       current1 = current1.next
     }
 
-    tail = tail.next
-    count += 1
+    tail = tail.next // move tail to tail.next
+    count += 1 // add 1 to count
 
   }
 
-  if (current1 !== null) tail.next = current1;
+  if (current1 !== null) tail.next = current1; //if current
   if (current2 !== null) tail.next = current2;
 
 
@@ -120,6 +120,7 @@ list.append('23');
 otherList.append('judith');
 otherList.append('reyes');
 otherList.append('24');
+// otherList.append('playa');
 
 // console.log(list)
 // console.log(otherList)
