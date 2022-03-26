@@ -103,8 +103,8 @@ const zipInPlace = (head1, head2) => {
 
   }
 
-  if (current1 !== null) tail.next = current1; //if current
-  if (current2 !== null) tail.next = current2;
+  if (current1 !== null) tail.next = current1; //if current1 still has some nodes in LL add to the end
+  if (current2 !== null) tail.next = current2; // same as above
 
 
   return head1
