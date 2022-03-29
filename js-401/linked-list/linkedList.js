@@ -79,16 +79,17 @@ class LinkedList {
   }
 
   remove(target) {
+
     let previous;
     let current = this.head;
 
     while (current) {
       if (current.value === target) {
         previous.next = current.next;
-        // current.next = null
+        current.next = null
       }
 
-      console.log("this is the current  ", current);
+      // console.log("this is the current  ", current);
       previous = current;
       current = current.next;
     }
@@ -110,6 +111,8 @@ list.append("swag");
 
 // console.log(JSON.stringify(list));
 console.log(JSON.stringify(list.remove(93)));
+console.log(JSON.stringify(list.remove(23)));
+
 // console.log(list.reverse())
 // console.log(list.includes(96));
 // console.log(list.to_sting(list));
