@@ -100,7 +100,6 @@ class LinkedList {
 
   kthFromEnd(k){
 
-    // feel like I am cheating using an array
     let arr = [];
     let currentNode = this.head;
     arr.push(currentNode.value);
