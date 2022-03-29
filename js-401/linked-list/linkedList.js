@@ -80,10 +80,17 @@ class LinkedList {
 
   remove(target) {
 
+    if (this.head.value === target){
+      this.head = this.head.next;
+      return this.head;
+    }
+
     let previous;
     let current = this.head;
 
     while (current) {
+
+
       if (current.value === target) {
         previous.next = current.next;
         current.next = null
@@ -110,8 +117,8 @@ list.append("swag");
 // list.insert('miguel');
 
 // console.log(JSON.stringify(list));
-console.log(JSON.stringify(list.remove(93)));
-console.log(JSON.stringify(list.remove(23)));
+console.log(JSON.stringify(list.remove("matt")));
+// console.log(JSON.stringify(list.remove(23)));
 
 // console.log(list.reverse())
 // console.log(list.includes(96));
