@@ -84,19 +84,19 @@ class LinkedList {
 }
 
 // list.head = node;
-let list = new LinkedList();
+// let list = new LinkedList();
 
 
-list.append('matt');
-list.append(23);
-list.append(93);
+// list.append('matt');
+// list.append(23);
+// list.append(93);
 
 // list.insert('miguel');
 
 
 
-console.log(JSON.stringify(list));
-console.log(list.reverse())
+// console.log(JSON.stringify(list));
+// console.log(list.reverse())
 // console.log(list.includes(96));
 // console.log(list.to_sting(list));
 
