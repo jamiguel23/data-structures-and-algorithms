@@ -1,6 +1,6 @@
 "use strict";
 
-class Node {
+class Node { //create node class
   constructor(value) {
     this.value = value;
     this.next = null;
