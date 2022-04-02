@@ -2,7 +2,7 @@
 
 class Node { //create node class
   constructor(value) {
-    this.value = value;
+    this.value = value; // set constructor value as nodes value
     this.next = null;
   }
 }
