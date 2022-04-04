@@ -3,7 +3,7 @@
 class Node { //create node class
   constructor(value) {
     this.value = value; // set constructor value as nodes value
-    this.next = null;
+    this.next = null; // set next value to null that will be added later
   }
 }
 
