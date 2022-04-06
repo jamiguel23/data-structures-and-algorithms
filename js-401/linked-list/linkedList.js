@@ -9,7 +9,7 @@ class Node { //create node class
 
 class LinkedList { // create linked list class 
   constructor() {
-    this.head = null;
+    this.head = null; // set head of the linked list as null
   }
 
   append(value) {
