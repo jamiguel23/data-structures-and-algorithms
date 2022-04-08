@@ -7,12 +7,12 @@ class Node { //create node class
   }
 }
 
-class LinkedList { // create linked list class 
+class LinkedList { // create linked list class
   constructor() {
     this.head = null; // set head of the linked list as null
   }
 
-  append(value) {
+  append(value) { // append method to add node to the end of the list
     let node = new Node(value);
     if (this.head === null) {
       this.head = node;
