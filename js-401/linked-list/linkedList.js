@@ -19,12 +19,12 @@ class LinkedList { // create linked list class
       return;
     }
 
-    let currentNode = this.head;
-    while (currentNode.next) {
-      currentNode = currentNode.next;
+    let currentNode = this.head; // set current node to the head
+    while (currentNode.next) { // while current.next is true move current node to currentNode.next
+      currentNode = currentNode.next; // when currentNode points to the last node in LL we will jump out of the while
     }
 
-    currentNode.next = node;
+    currentNode.next = node; // setting currentNode.next to the new node created at the top of the append method
   }
 
   insert(value) {
