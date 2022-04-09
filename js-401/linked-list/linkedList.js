@@ -13,8 +13,8 @@ class LinkedList { // create linked list class
   }
 
   append(value) { // append method to add node to the end of the list
-    let node = new Node(value); // using the value that is passed create a new node variable 
-    if (this.head === null) {
+    let node = new Node(value); // using the value that is passed create a new node variable
+    if (this.head === null) { // if the head is null then that means that the new node that is being appended is the start of the new LL making it the head by default
       this.head = node;
       return;
     }
