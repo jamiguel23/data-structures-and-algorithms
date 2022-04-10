@@ -35,7 +35,7 @@ class LinkedList { // create linked list class
     this.head = node;
   }
 
-  includes(value) { 
+  includes(value) { // includes is a validation method which will return true if the value is in LL and false when it does not
     //setting head to current node
     let currentNode = this.head;
 
