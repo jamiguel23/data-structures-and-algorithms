@@ -27,7 +27,7 @@ class LinkedList { // create linked list class
     currentNode.next = node; // setting currentNode.next to the new node created at the top of the append method
   }
 
-  insert(value) {
+  insert(value) { // insert method uses passes a value to then be added to a LL as as the new head
     //define head
     let node = new Node(value);
 
@@ -35,7 +35,7 @@ class LinkedList { // create linked list class
     this.head = node;
   }
 
-  includes(value) {
+  includes(value) { 
     //setting head to current node
     let currentNode = this.head;
 
