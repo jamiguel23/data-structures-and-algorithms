@@ -51,7 +51,7 @@ class LinkedList { // create linked list class
     return false;
   }
 
-  to_sting() {
+  to_sting() { // the to_string method will print a numerical value as well as a st
     let currentNode = this.head;
     let valuesStr = "";
 
