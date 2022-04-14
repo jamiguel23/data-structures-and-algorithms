@@ -64,8 +64,8 @@ class LinkedList { // create linked list class
     return valuesStr;
   }
 
-  reverse() {
-    let previous;
+  reverse() { //reversal of a LL iteratvly
+    let previous; // We must have a previous variable 
     let current = this.head;
 
     while (current) {
