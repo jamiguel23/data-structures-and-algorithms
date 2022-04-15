@@ -105,12 +105,6 @@ class LinkedList { // create linked list class
   }
 
 
-  deleteSingleNode(node){
-
-    let next = node.next
-    console.log(next)
-
-  }
 }
 
 // list.head = node;
@@ -129,6 +123,7 @@ list.append('hello')
 // console.log(list.reverse())
 // console.log(list.includes(96));
 // console.log(list.to_sting(list));
+
 
 module.exports = {
   Node,
