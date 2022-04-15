@@ -103,24 +103,29 @@ class LinkedList { // create linked list class
 
     return this.head;
   }
+
+
+  deleteSingleNode(node){
+
+    let next = node.next
+    console.log(next)
+
+  }
 }
 
 // list.head = node;
-// let list = new LinkedList();
+let list = new LinkedList();
 
 
-// list.append('matt');
-// list.append(23);
-// list.append(93);
+list.append('matt');
+list.append(23);
+list.append(93);
+list.append('hello')
 
 // list.insert('miguel');
-
 // console.log(JSON.stringify(list));
 // console.log(JSON.stringify(list.remove("matt")));
 // console.log(JSON.stringify(list.remove(23)));
-
-
-// console.log(JSON.stringify(list));
 // console.log(list.reverse())
 // console.log(list.includes(96));
 // console.log(list.to_sting(list));
