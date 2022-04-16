@@ -59,7 +59,7 @@ class BT {
     };
     walk(this.root);
     // console.log(res);
-    return maxValue;
+    return maxValue; // return the max value
 
   }
 
