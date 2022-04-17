@@ -65,7 +65,7 @@ class LinkedList { // create linked list class
   }
 
   reverse() { //reversal of a LL iteratvly
-    let previous; // We must have a previous variable 
+    let previous; // We must have a previous variable
     let current = this.head;
 
     while (current) {
@@ -78,7 +78,7 @@ class LinkedList { // create linked list class
     return previous;
   }
 
-  remove(target) {
+  remove(target) { // this method will remove the target value
 
     if (this.head.value === target){
       this.head = this.head.next;
