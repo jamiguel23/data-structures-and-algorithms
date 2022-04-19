@@ -46,32 +46,23 @@ class Stack {
       return false;
     }
   }
+
+  values() {
+
+    let values = [];
+
+    while (this.top !== null){
+
+      let top = this.pop()
+      values.push(top)
+    }
+    return values
+  }
+
 }
 
 
-
-
-// let queue = new Queue();
-// let newQueue = new Queue();
-
-// queue.enqueue(5);
-// queue.enqueue(10);
-// queue.enqueue(15);
-
-// console.log(JSON.stringify(queue));
-// console.log('this is the head value', queue.peek());
-// console.log(newQueue.peek());
-// console.log(queue.isEmpty());
-// let list = new LinkedList();
-
-// list.append('matt');
-// list.append('miguel');
-// list.append('23');
-
-
-// console.log(JSON.stringify(list));
-
-// let stack = new Stack();
+let stack = new Stack();
 // let newStack = new Stack();
 
 stack.push('matt');
@@ -81,11 +72,14 @@ stack.push('foo');
 let val = stack.pop();
 
 // console.log(JSON.stringify(stack), val);
+
+console.log(stack.values());
+
 // console.log(stack.peek());
 // console.log(newStack.peek());
 // console.log(stack.isEmpty());
 // console.log('new stack' , newStack);
 // console.log(newStack.isEmpty());
 
-// module.exports = Queue;
+
 module.exports = Stack;
