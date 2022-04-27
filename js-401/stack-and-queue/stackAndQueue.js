@@ -28,6 +28,7 @@ class Stack {
     let temp = this.top;
     this.top = temp.next;
     temp.next = null;
+    this.count -= 1;
     return temp.value;
   }
 
@@ -74,9 +75,9 @@ stack.push('10');
 stack.push('foo');
 let val = stack.pop();
 
-// console.log(JSON.stringify(stack), val);
+console.log(JSON.stringify(stack));
 
-console.log(stack.values());
+// console.log(stack.values());
 
 // console.log(stack.peek());
 // console.log(newStack.peek());
