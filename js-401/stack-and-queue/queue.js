@@ -7,6 +7,7 @@ class Queue {
   constructor() {
     this.front = null;
     this.back = null;
+    this.count = 0
   }
 
   enqueue(value) {
@@ -15,10 +16,12 @@ class Queue {
     if (this.front === null) {
       this.front = node;
       this.back = node;
+      this.count += 1;
       return;
     } else {
       this.back.next = node;
       this.back = node;
+      this.count += 1;
       return;
     }
   }
