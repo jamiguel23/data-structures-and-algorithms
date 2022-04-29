@@ -31,6 +31,7 @@ class Queue {
     let nodeToRemove = this.front;
     this.front = nodeToRemove.next;
     nodeToRemove.next = null;
+    this.count -=1;
     if (!this.front) {
       this.back = null;
     }
