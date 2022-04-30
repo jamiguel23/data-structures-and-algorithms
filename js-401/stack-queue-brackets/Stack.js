@@ -4,6 +4,7 @@ const Node = require('./Node.js');
 class Stack {
   constructor(){
     this.top = null;
+    this.count = 0
   }
 
   push(value) {
@@ -11,10 +12,12 @@ class Stack {
 
     if(this.top === null){
       this.top = node;
+      this.count += 1;
       return;
     } else {
       node.next = this.top;
       this.top = node;
+      this.count += 1;
     }
 
   }
