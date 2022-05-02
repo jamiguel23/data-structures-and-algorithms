@@ -33,7 +33,7 @@ class Stack {
   peek(){
 
     if(this.top === null){
-      return 'empty';
+      return 'no nodes in stack';
 
     }else {
       let value = this.top.value;
