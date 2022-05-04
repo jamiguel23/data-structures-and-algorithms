@@ -28,6 +28,7 @@ class Stack {
     let temp = this.top;
     this.top = temp.next;
     temp.next = null;
+    this.count -= 1;
     return temp.value;
   }
 
