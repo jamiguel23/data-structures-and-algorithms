@@ -81,6 +81,7 @@ class BST extends BT {
   }
 }
 
+// create a new tree to test
 let tree = new BST();
 
 tree.add(50);
