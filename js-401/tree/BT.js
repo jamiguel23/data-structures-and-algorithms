@@ -9,7 +9,7 @@ class BT {
     this.root = null;
   }
 
-  // root -> left -> right
+  // root -> left -> right recursive
   preOrder() {
 
     let helper = (node) => {
