@@ -56,6 +56,7 @@ let node4 = new Node(20);
 let node5 = new Node(24);
 let node6 = new Node(30);
 
+// set nodes to positions of trees
 tree.root = node1;
 tree.root.left = node2;
 tree.root.right = node3;
