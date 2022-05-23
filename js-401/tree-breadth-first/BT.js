@@ -45,6 +45,7 @@ class BT {
     helper(this.root);
   }
 
+  //finding highest value
   findMax() {
 
     let maxValue = Number.NEGATIVE_INFINITY;
