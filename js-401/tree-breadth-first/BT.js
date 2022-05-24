@@ -65,6 +65,7 @@ class BT {
   }
 
 
+  // left tot right search
   breadFirst() {
     // Checking for nodes
     if (!this.root) { throw new Error('No Nodes in This Tree'); }
