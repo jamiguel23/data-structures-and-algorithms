@@ -44,6 +44,7 @@ class BT {
     helper(this.root);
   }
 
+  //find highest value
   findMax() {
 
     let maxValue = 0;
