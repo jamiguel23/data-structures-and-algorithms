@@ -65,6 +65,7 @@ class BT {
 
 }
 
+// make new tree
 const tree = new BT();
 
 let node1 = new Node(10);
