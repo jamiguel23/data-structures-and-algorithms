@@ -8,6 +8,7 @@ class Node {
   }
 }
 
+// Linked List class
 class LinkedList {
   constructor() {
     this.head = null;
