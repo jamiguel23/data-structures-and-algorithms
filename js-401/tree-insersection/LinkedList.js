@@ -14,6 +14,7 @@ class LinkedList {
     this.head = null;
   }
 
+  // append new node to the end of the LL
   append(value) {
     let node = new Node(value);
     if(this.head === null) {
