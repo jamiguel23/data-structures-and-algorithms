@@ -30,6 +30,7 @@ class LinkedList {
     currentNode.next = node;
   }
 
+  // add new value to the front of thr list
   insert(value) {
 
     //define head
