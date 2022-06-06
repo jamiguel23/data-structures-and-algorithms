@@ -41,6 +41,7 @@ class LinkedList {
     this.head = node;
   }
 
+  // validating method to find if the value is in the LL
   includes(value){
     //setting head to current node
     let currentNode = this.head;
