@@ -19,6 +19,7 @@ class Tree {
     this.root = null
   }
 
+  // Root -> Left -> Right
   preOrder() {
 
     let arr = []
