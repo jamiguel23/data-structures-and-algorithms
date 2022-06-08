@@ -5,6 +5,7 @@
 const LinkedList = require('./LinkedList.js');
 
 
+// node class with null left and right an value through constructor
 class Node {
   constructor(value){
     this.value = value;
