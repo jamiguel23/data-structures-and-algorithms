@@ -63,6 +63,7 @@ class HashTable {
     }
   }
 
+  // look for the key given and return if its in the hashtable
   contains(key) {
     let position = this.hash(key);
 
