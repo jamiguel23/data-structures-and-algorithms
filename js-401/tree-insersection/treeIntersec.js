@@ -72,6 +72,7 @@ class HashTable {
 
   }
 
+  //give the keys inside the hashtable
   keys() {
     let collection = [];
 
