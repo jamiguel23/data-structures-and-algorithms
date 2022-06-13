@@ -1,5 +1,6 @@
 'use strict';
 
+// create node left and right
 class Node {
   constructor(value){
     this.value = value;
