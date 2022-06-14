@@ -2,7 +2,7 @@
 
 Array = ["green", "yellow", "black", "blue", "red"];
 
-function printFirstThree(arr) {
+function lookFirstThree(arr) {
   let firstThree = [];
   let count = 0;
 
@@ -17,4 +17,4 @@ function printFirstThree(arr) {
   return firstThree;
 }
 
-console.log(printFirstThree(Array));
+console.log(lookFirstThree(Array));
