@@ -14,7 +14,7 @@ function lookFirstThree(arr) {
   }
 
 
-  return firstThree;
+  // return firstThree;
 }
 
 console.log(lookFirstThree(Array));
