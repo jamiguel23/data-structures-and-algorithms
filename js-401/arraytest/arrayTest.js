@@ -1,7 +1,9 @@
 "use strict";
 
+//array
 Array = ["green", "yellow", "black", "blue", "red"];
 
+// function that takes in an array
 function lookFirstThree(arr) {
   let firstThree = [];
   let count = 0;
