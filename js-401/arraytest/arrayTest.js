@@ -9,6 +9,7 @@ function lookFirstThree(arr) {
   let count = 0;
 
 
+  //iterave solution
   for (let i = 0; i < arr.length; i++) {
     firstThree.push(arr[i]);
     count++;
