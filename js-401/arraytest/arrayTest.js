@@ -13,6 +13,7 @@ function lookFirstThree(arr) {
   for (let i = 0; i < arr.length; i++) {
     firstThree.push(arr[i]);
     count++;
+    // end the for loop
     if (count === 3) return firstThree;
   }
 
