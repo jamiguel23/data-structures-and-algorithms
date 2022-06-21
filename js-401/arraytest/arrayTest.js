@@ -23,4 +23,5 @@ function lookFirstThree(arr) {
   // return firstThree;
 }
 
+//testing in console
 console.log(lookFirstThree(Array));
