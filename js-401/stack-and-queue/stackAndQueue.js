@@ -63,6 +63,17 @@ class Stack {
     return values
   }
 
+  duplicates(){
+
+    let list = []
+
+    if(this.top === null){
+      return 'stack is empty'
+    }
+
+    
+  }
+
 }
 
 
