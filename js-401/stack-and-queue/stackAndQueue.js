@@ -64,6 +64,7 @@ class Stack {
   }
 
   // working on it
+  //suppose to return a list of duplicate values from a stack
   duplicates(){
 
     let list = []
