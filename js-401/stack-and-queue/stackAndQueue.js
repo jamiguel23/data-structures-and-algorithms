@@ -72,16 +72,17 @@ class Stack {
     }
 
     while (this.top){
-      let current = this.top
-      let next = this.top.next
-      if (current.value === next.value){
-        list.push(current.value)
-        console.log(list)
+      let current = this.pop()
+      let next = this.top
+      if (current === next.value){
+        list.push(current)
+        current = this.pop()
+        next = this.top
         console.log('this is current', current, 'this is next', next);
+
       } else {
-        next = next.next
-        current = current.next
-        this.pop()
+        current = this.pop()
+        next = this.top
       }
 
       return list;
