@@ -71,7 +71,22 @@ class Stack {
       return 'stack is empty'
     }
 
-    
+    while (this.top){
+      let current = this.top
+      let next = this.top.next
+      if (current.value === next.value){
+        list.push(current.value)
+        console.log(list)
+        console.log('this is current', current, 'this is next', next);
+      } else {
+        next = next.next
+        current = current.next
+        this.pop()
+      }
+
+      return list;
+    }
+
   }
 
 }
@@ -81,12 +96,12 @@ let stack = new Stack();
 // let newStack = new Stack();
 
 stack.push('matt');
-stack.push('miguel');
+stack.push('10');
 stack.push('10');
 stack.push('foo');
-let val = stack.pop();
 
-console.log(JSON.stringify(stack));
+
+console.log(stack.duplicates())
 
 // console.log(stack.values());
 
