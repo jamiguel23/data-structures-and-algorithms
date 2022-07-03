@@ -62,7 +62,7 @@ class Stack {
     }
     return values
   }
-
+  
   duplicates(){
 
     let list = []
@@ -71,18 +71,18 @@ class Stack {
       return 'stack is empty'
     }
 
-    while (this.top){
+    while (this.count !== 0){
       let current = this.pop()
       let next = this.top
       if (current === next.value){
         list.push(current)
         current = this.pop()
         next = this.top
-        console.log('this is current', current, 'this is next', next);
 
       } else {
         current = this.pop()
         next = this.top
+        console.log('this is current', current, 'this is next', next);
       }
 
       return list;
