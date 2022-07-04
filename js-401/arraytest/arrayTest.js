@@ -33,12 +33,12 @@ const arrMin = (arr) => {
 
     if(arr[i] < min){
       min = arr[i]
-      // console.log('this is min', min)
-
     }
 
   }
+
   return  min
+
 }
 
 let numsArr = [5, 8, 3, 1, 3, 7]
