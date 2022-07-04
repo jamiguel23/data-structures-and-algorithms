@@ -41,7 +41,7 @@ const arrMin = (arr) => {
 
 }
 
-let numsArr = [5, 8, 3, 1, 3, 7]
+let numsArr = [5, 8, 3, 1, -3, 7]
 //testing in console
 // console.log(lookFirstThree(Array));
 
