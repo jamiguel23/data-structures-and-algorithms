@@ -73,7 +73,7 @@ class Stack {
       return 'stack is empty'
     }
 
-    while (this.count !== 0){
+    while (this.top.next !== null){
       let current = this.pop()
       let next = this.top
       if (current === next.value){
