@@ -23,5 +23,17 @@ function lookFirstThree(arr) {
   // return firstThree;
 }
 
+// Given an Array, Find the minimum value
+const arrMin = (arr) => {
+
+
+  let min = Infinity
+
+  for (let i = 0; i < arr.length; i++){
+
+    
+  }
+}
+
 //testing in console
 console.log(lookFirstThree(Array));
