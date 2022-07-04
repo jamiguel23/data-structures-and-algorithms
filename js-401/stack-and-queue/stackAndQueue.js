@@ -96,7 +96,6 @@ class Stack {
 
 
 let stack = new Stack();
-// let newStack = new Stack();
 
 stack.push('matt');
 stack.push('10');
@@ -106,13 +105,6 @@ stack.push('foo');
 
 console.log(stack.duplicates())
 
-// console.log(stack.values());
-
-// console.log(stack.peek());
-// console.log(newStack.peek());
-// console.log(stack.isEmpty());
-// console.log('new stack' , newStack);
-// console.log(newStack.isEmpty());
 
 
 module.exports = Stack;
