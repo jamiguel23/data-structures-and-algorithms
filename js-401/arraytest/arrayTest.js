@@ -31,9 +31,18 @@ const arrMin = (arr) => {
 
   for (let i = 0; i < arr.length; i++){
 
-    
+    if(arr[i] < min){
+      min = arr[i]
+      // console.log('this is min', min)
+
+    }
+
   }
+  return  min
 }
 
+let numsArr = [5, 8, 3, 1, 3, 7]
 //testing in console
-console.log(lookFirstThree(Array));
+// console.log(lookFirstThree(Array));
+
+console.log(arrMin(numsArr));
