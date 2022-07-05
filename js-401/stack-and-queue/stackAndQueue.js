@@ -92,32 +92,44 @@ class Stack {
 
   }
 
-  max(){
+  // max(){
 
-    let maxValue = Number.NEGATIVE_INFINITY
+  //   let maxValue = Number.NEGATIVE_INFINITY
 
-    const _walk = () => {
+  //   const _walk = () => {
 
-      if (this.top === null){
-        return maxValue
-      }
+  //     if (this.top === null){
+  //       return maxValue
+  //     }
 
 
+  //   }
+  // }
+
+}
+
+const max = (stack) => {
+
+  let maxValue = Number.NEGATIVE_INFINITY
+
+  while (stack.top){
+
+    if(stack.top.value > maxValue){
+      maxValue = stack.top.value
     }
   }
-
 }
 
 
 let stack = new Stack();
 
-stack.push('matt');
+stack.push(2);
 stack.push('10');
 stack.push('10');
-stack.push('foo');
+stack.push(100);
 
 
-console.log(stack.duplicates())
+console.log(max(stack))
 
 
 
