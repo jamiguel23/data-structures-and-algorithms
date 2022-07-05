@@ -116,16 +116,22 @@ const max = (stack) => {
 
     if(stack.top.value > maxValue){
       maxValue = stack.top.value
+      stack.pop()
+    } else {
+      stack.pop()
     }
+
   }
+
+  return maxValue;
 }
 
 
 let stack = new Stack();
 
-stack.push(2);
-stack.push('10');
-stack.push('10');
+stack.push(3000);
+stack.push(300);
+stack.push(150);
 stack.push(100);
 
 
