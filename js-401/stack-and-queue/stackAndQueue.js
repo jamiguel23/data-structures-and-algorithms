@@ -92,19 +92,29 @@ class Stack {
 
   }
 
-  // max(){
 
-  //   let maxValue = Number.NEGATIVE_INFINITY
+  //working on recursive solution to finding max value
+  max(){
 
-  //   const _walk = () => {
+    let maxValue = Number.NEGATIVE_INFINITY
 
-  //     if (this.top === null){
-  //       return maxValue
-  //     }
+    const _walk = (stack) => {
 
+      if (this.top === null){
+        return maxValue
+      }
 
-  //   }
-  // }
+      if(stack.top.value > maxValue){
+        maxValue = stack.top.maxValue
+        _walk(stack.pop())
+      } else {
+        _walk(stack.pop())
+      }
+
+    }
+
+    return maxValue
+  }
 
 }
 
@@ -135,7 +145,7 @@ stack.push(150);
 stack.push(100);
 
 
-console.log(max(stack))
+console.log(stack.max())
 
 
 
