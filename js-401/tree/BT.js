@@ -44,6 +44,13 @@ class BT {
     helper(this.root);
   }
 
+  //invert tree
+
+  invert(){
+
+    
+  }
+
 }
 
 //create new tree
