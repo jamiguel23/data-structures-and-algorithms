@@ -92,6 +92,20 @@ class Stack {
 
   }
 
+  max(){
+
+    let maxValue = Number.NEGATIVE_INFINITY
+
+    const _walk = () => {
+
+      if (this.top === null){
+        return maxValue
+      }
+
+
+    }
+  }
+
 }
 
 
