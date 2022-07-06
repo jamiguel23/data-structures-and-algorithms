@@ -57,8 +57,13 @@ class BT {
       _invert(node.left);
       _invert(node.right);
 
-      
+      let hold = node.left
+      node.left = node.right;
+      node.right = hold;
     }
+
+    _invert(this.root);
+    return this.root
   }
 
 }
@@ -82,7 +87,7 @@ tree.root.left.right = node5;
 tree.root.right.left = node6;
 
 
-// tree.preOrder();
+tree.preOrder();
 // console.log('************');
 // tree.inOrder();
 // console.log('************');
