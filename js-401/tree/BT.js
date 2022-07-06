@@ -48,7 +48,17 @@ class BT {
 
   invert(){
 
-    
+    let _invert = (node) => {
+
+      if (node == null){
+        return
+      }
+
+      _invert(node.left);
+      _invert(node.right);
+
+      
+    }
   }
 
 }
