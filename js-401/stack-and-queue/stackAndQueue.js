@@ -90,6 +90,7 @@ class Stack {
       return list;
     }
 
+
   }
 
 
@@ -115,6 +116,15 @@ class Stack {
 
     return maxValue
   }
+
+  min(){
+    let minValue = Number.POSITIVE_INFINITY
+
+    while(this.top){
+
+      if(this.top.value <)
+    }
+ }
 
 }
 
