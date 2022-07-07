@@ -59,15 +59,18 @@ class Queue {
       return 'queue is empty'
     }
 
-    let sortedArr = [];
+    let unsortedArr = [];
 
     while(this.isEmpty() == false){
 
-      sortedArr.push(this.dequeue())
+      unsortedArr.push(this.dequeue())
 
     }
 
+
+    let sortedArr = unsortedArr.sort(function(a, b){return a - b})
     console.log(sortedArr);
+
   }
 
 }
