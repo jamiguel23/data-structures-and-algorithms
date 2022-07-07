@@ -59,10 +59,22 @@ class Queue {
       return 'queue is empty'
     }
 
-    
+    let sortedArr = [];
+
+    while(this.isEmpty() == false){
+
+      sortedArr.push(this.dequeue())
+
+    }
+
+    console.log(sortedArr);
   }
 
 }
+
+let queue = new Queue()
+
+queue.enqueue(3)
 
 
 module.exports = Queue;
