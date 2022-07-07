@@ -105,15 +105,16 @@ class Stack {
         return maxValue
       }
 
-      if(stack.top.value > maxValue){
-        maxValue = stack.top.maxValue
-        _walk(stack.pop())
+      if(this.top.value > maxValue){
+        maxValue = this.top.maxValue
+        _walk(this.pop())
       } else {
-        _walk(stack.pop())
+        _walk(this.pop())
       }
 
     }
 
+    _walk(this.top)
     return maxValue
   }
 
@@ -163,7 +164,7 @@ stack.push(150);
 stack.push(100);
 
 
-// console.log(stack.max())
+console.log(stack.max())
 console.log(stack.min())
 
 
