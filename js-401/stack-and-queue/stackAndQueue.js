@@ -122,8 +122,16 @@ class Stack {
 
     while(this.top){
 
-      if(this.top.value <)
+      if(this.top.value < minValue){
+        minValue = this.top.value
+        this.pop()
+      } else {
+
+        this.pop()
+      }
     }
+
+    return minValue
  }
 
 }
@@ -155,7 +163,8 @@ stack.push(150);
 stack.push(100);
 
 
-console.log(stack.max())
+// console.log(stack.max())
+console.log(stack.min())
 
 
 
