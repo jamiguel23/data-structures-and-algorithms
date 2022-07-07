@@ -67,9 +67,15 @@ class Queue {
 
     }
 
-
     let sortedArr = unsortedArr.sort(function(a, b){return a - b})
-    console.log(sortedArr);
+    // console.log(sortedArr);
+
+    for(let i=0; i<sortedArr.length; i++){
+      this.enqueue(sortedArr[i])
+      // console.log(this.front)
+    }
+
+    return this.front
 
   }
 
