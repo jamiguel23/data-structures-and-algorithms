@@ -54,6 +54,14 @@ class Queue {
     }
   }
 
+  sort(){
+    if(this.front === null){
+      return 'queue is empty'
+    }
+
+    
+  }
+
 }
 
 
