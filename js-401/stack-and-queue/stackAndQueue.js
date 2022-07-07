@@ -135,6 +135,11 @@ class Stack {
     return minValue
  }
 
+  sort(){
+    
+
+ }
+
 }
 
 //iterative max values solution
