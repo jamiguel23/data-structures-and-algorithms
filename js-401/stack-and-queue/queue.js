@@ -74,7 +74,11 @@ class Queue {
 
 let queue = new Queue()
 
+queue.enqueue(7)
+queue.enqueue(10)
 queue.enqueue(3)
+queue.enqueue(33)
 
+console.log(queue.sort())
 
 module.exports = Queue;
