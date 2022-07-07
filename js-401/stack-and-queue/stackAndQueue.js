@@ -106,7 +106,7 @@ class Stack {
       }
 
       if(this.top.value > maxValue){
-        maxValue = this.top.maxValue
+        maxValue = this.top.value
         _walk(this.pop())
       } else {
         _walk(this.pop())
@@ -137,23 +137,24 @@ class Stack {
 
 }
 
-const max = (stack) => {
+//iterative max values oleution
+// const max = (stack) => {
 
-  let maxValue = Number.NEGATIVE_INFINITY
+//   let maxValue = Number.NEGATIVE_INFINITY
 
-  while (stack.top){
+//   while (stack.top){
 
-    if(stack.top.value > maxValue){
-      maxValue = stack.top.value
-      stack.pop()
-    } else {
-      stack.pop()
-    }
+//     if(stack.top.value > maxValue){
+//       maxValue = stack.top.value
+//       stack.pop()
+//     } else {
+//       stack.pop()
+//     }
 
-  }
+//   }
 
-  return maxValue;
-}
+//   return maxValue;
+// }
 
 
 let stack = new Stack();
@@ -165,7 +166,7 @@ stack.push(100);
 
 
 console.log(stack.max())
-console.log(stack.min())
+// console.log(stack.min())
 
 
 
