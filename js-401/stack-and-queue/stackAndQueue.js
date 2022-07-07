@@ -137,7 +137,7 @@ class Stack {
 
 }
 
-//iterative max values oleution
+//iterative max values solution
 // const max = (stack) => {
 
 //   let maxValue = Number.NEGATIVE_INFINITY
