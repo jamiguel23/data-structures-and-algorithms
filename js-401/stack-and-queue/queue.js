@@ -56,6 +56,7 @@ class Queue {
 
   // Time - O(n * log n)
   // Space = O(n)
+  // sort numbers
   sort(){
     if(this.front === null){
       return 'queue is empty'
