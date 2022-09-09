@@ -55,7 +55,7 @@ class BST extends BT {
     return false;
   }
 
-  //nearest value recursive
+  //nearest value ittertive
   nearestValue(target){
 
     let current = this.root;
