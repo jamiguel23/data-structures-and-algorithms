@@ -4,6 +4,7 @@
 Array = ["green", "yellow", "black", "blue", "red"];
 
 //This is an edit
+//another one
 
 // function that takes in an array
 function lookFirstThree(arr) {
