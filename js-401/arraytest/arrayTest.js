@@ -3,6 +3,8 @@
 //array
 Array = ["green", "yellow", "black", "blue", "red"];
 
+//This is an edit
+
 // function that takes in an array
 function lookFirstThree(arr) {
   //set empty array
