@@ -1,5 +1,6 @@
 'use strict';
 
+// create node left and right
 class Node {
   constructor(value){
     this.value = value;
@@ -8,4 +9,5 @@ class Node {
   }
 }
 
+//export modules
 module.exports = Node;

@@ -45,6 +45,7 @@ class BT {
     helper(this.root);
   }
 
+  //finding highest value
   findMax() {
 
     let maxValue = Number.NEGATIVE_INFINITY;
@@ -64,6 +65,7 @@ class BT {
   }
 
 
+  // left tot right search
   breadFirst() {
     // Checking for nodes
     if (!this.root) { throw new Error('No Nodes in This Tree'); }
@@ -90,6 +92,7 @@ class BT {
 }
 
 
+// create new tree
 const tree = new BT();
 
 let node1 = new Node(10);

@@ -44,6 +44,7 @@ class BT {
     helper(this.root);
   }
 
+  //find highest value
   findMax() {
 
     let maxValue = 0;
@@ -64,6 +65,7 @@ class BT {
 
 }
 
+// make new tree
 const tree = new BT();
 
 let node1 = new Node(10);

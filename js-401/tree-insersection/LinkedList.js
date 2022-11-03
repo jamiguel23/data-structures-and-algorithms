@@ -1,5 +1,6 @@
 'use strict';
 
+//create node class
 class Node {
   constructor(value){
     this.value = value;
@@ -7,11 +8,13 @@ class Node {
   }
 }
 
+// Linked List class
 class LinkedList {
   constructor() {
     this.head = null;
   }
 
+  // append new node to the end of the LL
   append(value) {
     let node = new Node(value);
     if(this.head === null) {
@@ -27,6 +30,7 @@ class LinkedList {
     currentNode.next = node;
   }
 
+  // add new value to the front of thr list
   insert(value) {
 
     //define head
@@ -37,6 +41,7 @@ class LinkedList {
     this.head = node;
   }
 
+  // validating method to find if the value is in the LL
   includes(value){
     //setting head to current node
     let currentNode = this.head;

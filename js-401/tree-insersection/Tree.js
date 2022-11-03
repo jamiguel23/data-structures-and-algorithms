@@ -5,6 +5,7 @@
 const LinkedList = require('./LinkedList.js');
 
 
+// node class with null left and right an value through constructor
 class Node {
   constructor(value){
     this.value = value;
@@ -19,6 +20,7 @@ class Tree {
     this.root = null
   }
 
+  // Root -> Left -> Right
   preOrder() {
 
     let arr = []

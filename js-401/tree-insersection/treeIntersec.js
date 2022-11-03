@@ -63,6 +63,7 @@ class HashTable {
     }
   }
 
+  // look for the key given and return if its in the hashtable
   contains(key) {
     let position = this.hash(key);
 
@@ -71,6 +72,7 @@ class HashTable {
 
   }
 
+  //give the keys inside the hashtable
   keys() {
     let collection = [];
 
@@ -91,7 +93,7 @@ class HashTable {
 }
 
 
-
+// create hash table
 let table = new HashTable(1042);
 
 // console.log(table.hash('matt'))
@@ -161,12 +163,12 @@ function hashRepeatWord(str) {
     table.set(str[i]);
     // console.log(str[i])
 
-    
+
   }
   // console.log(JSON.stringify(table));
-  
+
   return repeats;
-  
+
 
   // return 'no repeats found'
 }
@@ -177,7 +179,7 @@ function treeIntersection(t1, t2) {
 
   let tree1Res = t1.preOrder()
   let tree2Res = t2.preOrder()
- 
+
 
   let tree1Str = tree1Res.toString()
   let tree1Split = tree1Str.split(',')
