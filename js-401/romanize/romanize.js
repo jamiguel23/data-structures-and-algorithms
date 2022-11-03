@@ -71,4 +71,18 @@ const convertToRoman = (num) => {
 
 let result = convertToRoman(999);
 
-console.log('this is the result', result)
+// console.log('this is the result/', result)
+
+let shopHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+
+function randomCust(min, max) {
+  let customers = [];
+  for (let i = 0; i < shopHours.length; i++) {
+    let randomCustomers = Math.floor(Math.random() * (max - min + 1) + min);
+    customers.push(randomCustomers);
+  }
+  return customers;
+}
+
+console.log(randomCust(10,5000))
+
