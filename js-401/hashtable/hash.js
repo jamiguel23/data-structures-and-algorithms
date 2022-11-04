@@ -26,15 +26,15 @@ class HashTable {
     let position = this.hash(key);
     let payload = `${key}:${value}`;
 
-    
+
     if (this.buckets[position]) {
-      
+
       let bucket = this.buckets[position];
-      bucket.append(payload); 
+      bucket.append(payload);
     } else {
-      
+
       let bucket = new LinkedList();
-      
+
       bucket.append(payload);
       this.buckets[position] = bucket;
     }
@@ -45,7 +45,7 @@ class HashTable {
 
     if (this.buckets[position]) {
       let list = this.buckets[position];
-      
+
       let currentNode = list.head;
       let [keyFromList, value] = currentNode.value.split(':');
       if (keyFromList === key) {
@@ -71,7 +71,7 @@ class HashTable {
         let [key, value] = this.buckets[i].head.value.split(':')
         collection.push(key);
       }
-      
+
     }
 
 
@@ -89,7 +89,7 @@ table.set('goliath', 84)
 
 table.set('matt', 50);
 
-// console.log(table)
+console.log(table)
 
 // let contain = table.contains('foo');
 
