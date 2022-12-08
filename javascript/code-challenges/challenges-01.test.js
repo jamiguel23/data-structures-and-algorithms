@@ -9,11 +9,20 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  const localArray = [];
-  arr.forEach((number => {
-    localArray.push(number +1);
-  }));
-  return localArray;
+  // const localArray = [];
+  // arr.forEach((number => {
+  //   localArray.push(number +1);
+  // }));
+  // return localArray;
+
+  let localArr = [];
+
+  arr.forEach( num => {
+    let newNum = num + 1
+    localArr.push(newNum)
+  })
+
+  return localArr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,9 +60,9 @@ CHALLENGE 4
 
 Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
 
-Then, write a function named `speaker` that takes in an array of strings and a callback function. 
+Then, write a function named `speaker` that takes in an array of strings and a callback function.
 
-Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
+Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
@@ -164,7 +173,7 @@ Run your tests from the console: jest challenges-01.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should return an array with 1 added to each value of the original array', () => {
     expect(addOne([1, 2, 3, 4, 5])).toStrictEqual([2, 3, 4, 5, 6]);
   });
@@ -204,7 +213,7 @@ xdescribe('Testing challenge 6', () => {
   });
 });
 
-describe('Testing challenge 7', () => {
+xdescribe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
