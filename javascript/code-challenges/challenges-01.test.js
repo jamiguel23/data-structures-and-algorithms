@@ -1,5 +1,7 @@
 'use strict';
 
+const { addListener } = require("nodemon");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -106,7 +108,7 @@ const addNumbers = (num, arr, times, callback) => {
 
 CHALLENGE 6
 
-Write a function named createList that takes in an array of the current store intentory.
+Write a function named createList that takes in an array of the current store inventory.
 
 The inventory is formatted like this:
 [
@@ -121,7 +123,20 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
- 
+  // create new list
+  let newList = []
+  // use forEach on availableItems
+  availableItems.forEach(item => {
+    // check if item is available
+    if(item.available){
+      // add available item to new list
+      newList.push(item.name)
+    }
+
+  })
+  // return new list
+  console.log('this is the new list', newList)
+  return newList;
 };
 
 /* ------------------------------------------------------------------------------------------------
