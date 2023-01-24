@@ -228,19 +228,20 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 const calculateAverage = (arr) => {
   // Solution code here...
 
-  let total = 0;
+  // let total = 0;
  // not the actual solution. will return to later
-  arr.reduce((acc, curr) => {
+  let result = arr.reduce((acc, curr) => {
 
-    total += curr
+    return{
+      count: acc.count + 1,
+      sum: curr + acc.sum
 
-  }, 0)
+    }
+  }, {count: 0 , sum:0})
 
-  let average = total/arr.length
-
-  console.log(total)
-  console.log(average)
-  return average;
+  console.log('this is result', result)
+  // console.log(average)
+  return result.sum/result.count;
 };
 
 /* ------------------------------------------------------------------------------------------------
