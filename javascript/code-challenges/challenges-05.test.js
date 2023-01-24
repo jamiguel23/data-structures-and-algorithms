@@ -227,6 +227,20 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 
 const calculateAverage = (arr) => {
   // Solution code here...
+
+  let total = 0;
+ // not the actual solution. will return to later
+  arr.reduce((acc, curr) => {
+
+    total += curr
+
+  }, 0)
+
+  let average = total/arr.length
+
+  console.log(total)
+  console.log(average)
+  return average;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -361,13 +375,13 @@ xdescribe('Testing challenge 6', () => {
   });
 });
 
-describe('Testing challenge 7', () => {
+xdescribe('Testing challenge 7', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should return the average of the numbers in the array', () => {
     expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
   });
