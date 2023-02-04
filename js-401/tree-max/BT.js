@@ -68,13 +68,13 @@ class BT {
 // make new tree
 const tree = new BT();
 
-let node1 = new Node(10);
+let node1 = new Node(3);
 let node2 = new Node(15);
 let node3 = new Node(18);
 let node4 = new Node(20);
 let node5 = new Node(24);
 let node6 = new Node(30);
-let node7 = new Node(99);
+let node7 = new Node(10);
 
 tree.root = node1;
 tree.root.left = node2;
