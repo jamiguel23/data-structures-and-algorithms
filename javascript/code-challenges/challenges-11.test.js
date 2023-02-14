@@ -165,7 +165,8 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   let shortest = '';
-  let sortedHeights = data.map(char => char.height).sort((a,b) => a -b);
+  let sortedHeights = data.map(char => char.height).sort((a,b) => a-b);
+  console.log(sortedHeights);
   data.forEach(char => {
     if (char.height === sortedHeights[0]){
       shortest = char.name;
