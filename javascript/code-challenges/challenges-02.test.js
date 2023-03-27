@@ -230,6 +230,18 @@ const snorlaxStats = {
 
 const extractStats = (arr) => {
   // Solution code here...
+  // console.log(arr)
+
+  let result = arr.map(sta => {
+    // console.log(sta.stat.name)
+
+    let sum = sta.effort + sta.baseStat
+    // console.log('name: ' , sta.stat.name, 'total: ', sum)
+
+    return {name: sta.stat.name, total: sum};
+  })
+console.log(result);
+  return result
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -301,7 +313,7 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-describe('Testing challenge 8', () => {
+xdescribe('Testing challenge 8', () => {
   test('It should return an array containing the keys from an object', () => {
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual([ 'odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd' ]);
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541]).length).toStrictEqual(8);
@@ -330,7 +342,7 @@ xdescribe('Testing challenge 9', () => {
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return an array containing objects with name and total values', () => {
     expect(extractStats(snorlaxStats.stats)).toStrictEqual([
       { name: 'speed', total: 35, },
