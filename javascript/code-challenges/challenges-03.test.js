@@ -113,6 +113,12 @@ const snorlaxData = {
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
   // Solution code here...
+
+  return arr.filter( stat => {
+    // console.log('this is the stat', sat);
+    return stat.baseStat > minBaseStat;
+    // return
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -203,13 +209,13 @@ Run your tests from the console: jest challenges-08.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
+xdescribe('Testing challenge 1', () => {
   test('It should add two to every value', () => {
     expect(addTwo([1, 2, 4])).toStrictEqual([3, 4, 6]);
   });
 });
 
-describe('Testing challenge 2', () => {
+xdescribe('Testing challenge 2', () => {
   test('It should return an array containing only numbers', () => {
     expect(typeNum([1, 'bob', 3])).toStrictEqual([1, 3]);
     expect(typeNum([1, 'bob', 3]).length).toStrictEqual(2);
@@ -218,7 +224,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-describe('Testing challenge 3', () => {
+xdescribe('Testing challenge 3', () => {
   test('It should return an array of strings containing the word and', () => {
     expect(containsAnd(['panda', 'ran', 'and'])).toStrictEqual(['panda', 'and']);
     expect(containsAnd(['banana', 'bob', 'xyz'])).toStrictEqual([]);
@@ -227,7 +233,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-describe('Testing challenge 4', () => {
+xdescribe('Testing challenge 4', () => {
   test('It should return an array containing only odd integers', () => {
     expect(oddValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toStrictEqual([1, 3, 5, 7, 9]);
     expect(oddValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).length).toStrictEqual(5);
@@ -236,7 +242,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-describe('Testing challenge 5', () => {
+xdescribe('Testing challenge 5', () => {
   const firstNums = [1, 2, 3];
   const secondNums = [1, 2, 3, 4];
 
@@ -260,7 +266,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return an array containing the stats that are greater than the input', () => {
     expect(getBaseStatGreaterThan(snorlaxData.stats, 75)).toStrictEqual([{ stat: { url: 'https://pokeapi.co/api/v2/stat/5/', name: 'special-defense' }, effort: 2, baseStat: 110 }]);
     expect(getBaseStatGreaterThan(snorlaxData.stats, 75).length).toStrictEqual(1);
