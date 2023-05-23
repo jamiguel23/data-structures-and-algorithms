@@ -15,13 +15,16 @@ const addOne = (arr) => {
 
   console.log(arr);
   // use foreach onto param array itterate through increment by 1
-  arr.forEach((num) => {
+  // arr.forEach((num) => {
 
-    let result = num + 1;
-    // push new value into new array
-    console.log(result);
-    newArr.push(result);
-  });
+  //   let result = num + 1;
+  //   // push new value into new array
+  //   console.log(result);
+  //   newArr.push(result);
+  // });
+
+  //one liner
+  arr.forEach(num => newArr.push(num + 1));
   // return new array
   return newArr;
 
@@ -36,9 +39,24 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  const localArr = [];
-  arr.forEach(str => localArr.push(str + '!'));
-  return localArr;
+
+  console.log(arr);
+  //create new arr
+
+  let newArr = [];
+  // use foreach to itterate and add !
+  // arr.forEach( (word) => {
+  //   let newWord = word + '!';
+  //   console.log(newWord);
+  //   //push new values to new array
+  //   newArr.push(newWord);
+  // });
+
+  //one liner
+  arr.forEach(word => newArr.push(word + '!'));
+
+  // return new array
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -175,13 +193,13 @@ Run your tests from the console: jest challenges-01.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
+xdescribe('Testing challenge 1', () => {
   test('It should return an array with 1 added to each value of the original array', () => {
     expect(addOne([1, 2, 3, 4, 5])).toStrictEqual([2, 3, 4, 5, 6]);
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array with an exclamation point added to each value of the original array', () => {
     expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
   });
@@ -193,7 +211,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-describe('Testing challenge 4', () => {
+xdescribe('Testing challenge 4', () => {
   test('It should provide an array of strings, that get uppercased, and a "!" at the end', () => {
     expect(speaker(['hello', '301', 'students'], greeting)).toStrictEqual(['HELLO!', '301!', 'STUDENTS!']);
   });
