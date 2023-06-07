@@ -165,17 +165,21 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   const outputArr = [];
-  const calcFizz = num => {
-    if ((num % 3) === 0 && ((num % 5) === 0))
-      return 'Fizz Buzz';
-    else if ((num % 3) === 0)
-      return 'Fizz';
-    else if ((num % 5) === 0)
-      return 'Buzz';
-    else
-      return num;
-  };
-  arr.forEach(num => outputArr.push(calcFizz(num)));
+  // const calcFizz = num => {
+  //   if ((num % 3) === 0 && ((num % 5) === 0))
+  //     return 'Fizz Buzz';
+  //   else if ((num % 3) === 0)
+  //     return 'Fizz';
+  //   else if ((num % 5) === 0)
+  //     return 'Buzz';
+  //   else
+  //     return num;
+  // };
+  // arr.forEach(num => outputArr.push(calcFizz(num)));
+
+  arr.forEach( num => {
+
+  });
 
   return outputArr;
 };
