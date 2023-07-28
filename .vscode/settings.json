@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
     "Psuedo"
-  ]
+  ],
+  "dotnet.defaultSolution": "c-sharp/DataStructures/DataStructures.sln"
 }
