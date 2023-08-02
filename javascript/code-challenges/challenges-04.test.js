@@ -175,7 +175,7 @@ const people = [
 const sortPeople = (arr) => {
   // Solution code here...
 
-  return arr.sort((a, b) => a.lastName > b.lastName ? 1 : a.lastName < b.lastName ? -1 : 0 );
+  return arr.sort((a, b) => a.lastName > b.lastName ? 1 : a.lastName < b.lastName ? -1 : 0);
 
 };
 
@@ -191,6 +191,11 @@ If two people have the same full name, the younger one should come first. Do not
 
 const sortPeopleBetter = (arr) => {
   // Solution code here...
+  console.log(arr);
+
+  let res = arr.sort((a,b) => {
+    if(a.lastName)
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -331,7 +336,7 @@ xdescribe('Testing challenge 9', () => {
   });
 });
 
-describe('Testing challenge 10', () => {
+xdescribe('Testing challenge 10', () => {
   test('It should sort people by their last names', () => {
     expect(sortPeople(people)).toStrictEqual([
       new Person('Casey', 'Codefellow', 38),
@@ -343,7 +348,7 @@ describe('Testing challenge 10', () => {
   });
 });
 
-xdescribe('Testing challenge 11', () => {
+describe('Testing challenge 11', () => {
   test('It should sort people with more strict ordering', () => {
     const family = [
       new Person('Casey', 'Codefellows', 55),
