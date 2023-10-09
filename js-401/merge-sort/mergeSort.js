@@ -5,8 +5,8 @@
 function mergeSort(arr) {
 
   //declare n to the array length
-  let n = arr.length
-  console.log(arr)
+  let n = arr.length;
+  console.log(arr);
 
   //if length is greater than 1
   if (n > 1){
@@ -34,20 +34,20 @@ function merge(left, right, arr) {
   // Moves left and right arrays to find the lowest
   while ((i < left.length) && (j < right.length)) {
     if (left[i] <= right[j]) {
-      arr[k] = left[i]
-      i = i + 1
+      arr[k] = left[i];
+      i = i + 1;
     }
     else {
-      arr[k] = right[j]
-      j = j + 1
+      arr[k] = right[j];
+      j = j + 1;
     }
     // Moves through our final array
-    k = k + 1
+    k = k + 1;
   }
   if (i === left.length) {
-    arr[k] = right[j]
+    arr[k] = right[j];
   } else {
-    arr[k] = left[i]
+    arr[k] = left[i];
   }
 
 }
