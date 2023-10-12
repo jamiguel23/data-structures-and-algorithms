@@ -204,16 +204,16 @@ const countNumberOfChildren = (arr) => {
   // Solution code here...
 
   return arr.reduce((acc, curr) => {
-    console.log(curr)
+    console.log(curr);
     if(curr.children){
-      acc += curr.children.length
+      acc += curr.children.length;
     }
 
-    console.log('this is the acc', acc)
+    console.log('this is the acc', acc);
 
     return acc;
 
-  },0)
+  },0);
 
 };
 
@@ -228,20 +228,9 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 const calculateAverage = (arr) => {
   // Solution code here...
 
-  // let total = 0;
- // not the actual solution. will return to later
-  let result = arr.reduce((acc, curr) => {
-
-    return{
-      count: acc.count + 1,
-      sum: curr + acc.sum
-
-    }
-  }, {count: 0 , sum:0})
-
-  console.log('this is result', result)
-  // console.log(average)
-  return result.sum/result.count;
+  console.log(arr.reduce((acc, curr) => {
+    console.log(curr);
+  }), 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -383,13 +372,13 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should return the average of the numbers in the array', () => {
     expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
   });
 });
 
-describe('Testing challenge 9', () => {
+xdescribe('Testing challenge 9', () => {
   test('It should return a count of the prime numbers in the array', () => {
     expect(countPrimeNumbers([1, 2, 13, 64, 45, 56, 17, 8])).toStrictEqual(3);
   });
