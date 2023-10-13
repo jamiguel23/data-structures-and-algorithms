@@ -296,6 +296,20 @@ const snorlaxData = {
 
 const extractStat = (statName, arr) => {
   // Solution code here...
+
+
+
+  let res = arr.reduce((acc, curr) => {
+    console.log(curr.stat.name);
+
+    if(statName === curr.stat.name){
+      return curr;
+    } else {
+      return acc;
+    }
+  }, null);
+
+  return res;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -372,7 +386,7 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-describe('Testing challenge 8', () => {
+xdescribe('Testing challenge 8', () => {
   test('It should return the average of the numbers in the array', () => {
     expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
   });
@@ -384,7 +398,7 @@ xdescribe('Testing challenge 9', () => {
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return any stats that match the input', () => {
     expect(extractStat('speed', snorlaxData.stats)).toStrictEqual({ stat: { url: 'https://pokeapi.co/api/v2/stat/6/', name: 'speed' }, effort: 5, baseStat: 30 });
   });
