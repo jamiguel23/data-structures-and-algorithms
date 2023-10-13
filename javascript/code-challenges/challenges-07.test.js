@@ -31,7 +31,7 @@ const sortStarWarsCharacters = (starWarsArr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index. 
+Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index.
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
@@ -302,7 +302,7 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should return a list of recipe steps', () => {
     expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
     expect(stepActions(gruffaloCrumble).length).toStrictEqual(9);
