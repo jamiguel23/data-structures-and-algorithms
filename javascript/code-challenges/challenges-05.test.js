@@ -254,8 +254,6 @@ const countPrimeNumbers = (arr) => {
   // Solution code here...
 
   let res = arr.reduce((acc,curr) => {
-
-    console.log('this is curr', isPrime(curr));
     if(isPrime(curr) !== false) {
       acc++;
     }
