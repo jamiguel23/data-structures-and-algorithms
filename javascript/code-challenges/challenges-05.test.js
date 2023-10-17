@@ -333,11 +333,18 @@ const extractChildren = (arr) => {
 
   let children = arr.filter(charater => charater.name.includes('a'));
 
-  console.log(children);
-
   let res = children.reduce((acc, curr) => {
 
+    if(curr.children) {
+      console.log(...curr.children);
+      acc.push(...curr.children);
+    }
+
+    return acc;
+
   },[]);
+
+  return res;
 };
 
 /* ------------------------------------------------------------------------------------------------
