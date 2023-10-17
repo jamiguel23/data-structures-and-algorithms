@@ -331,7 +331,13 @@ Write a function named extractChildren that, given the array of characters from 
 const extractChildren = (arr) => {
   // Solution code here...
 
-  let children = arr.filter(families => console.log(families) );
+  let children = arr.filter(charater => charater.name.includes('a'));
+
+  console.log(children);
+
+  let res = children.reduce((acc, curr) => {
+
+  },[]);
 };
 
 /* ------------------------------------------------------------------------------------------------
