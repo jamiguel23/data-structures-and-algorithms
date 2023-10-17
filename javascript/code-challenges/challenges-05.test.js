@@ -340,7 +340,6 @@ const extractChildren = (arr) => {
     }
 
     return acc;
-
   },[]);
 
   return res;
