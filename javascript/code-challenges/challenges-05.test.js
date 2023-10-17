@@ -336,7 +336,6 @@ const extractChildren = (arr) => {
   let res = children.reduce((acc, curr) => {
 
     if(curr.children) {
-      console.log(...curr.children);
       acc.push(...curr.children);
     }
 
